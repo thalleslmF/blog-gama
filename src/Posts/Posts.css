@@ -11,9 +11,10 @@
     display: flex;
     flex-direction: column;
     flex-grow: 3;
-    max-width: 70%;
+    max-width: 90%;
     text-align: center;
     background-color: #f6f6f6;
+
 }
 
 .container-posts>div.postzao>h1 {
@@ -21,6 +22,13 @@
 
     align-self: flex-start;
 }
+
+.container-posts>div.postzao h2 {
+
+
+    align-self: flex-start;
+}
+
 
 .container-posts>div.postzao p {
 
@@ -32,15 +40,16 @@
 
 
     background-color: white;
-    border-bottom: 3px solid black;
-    margin-top: 20px;
+    box-shadow: 0 0 1em black;
+    margin: 20px;
+
 }
 
 .container-posts>div.postzao>.post-preview a {
 
 
     text-decoration: none;
-    color: black;
+    color: #233D4D;
 }
 
 .container-posts>div.postzao>.post-preview h2 a:hover {
@@ -51,7 +60,8 @@
 }
 
 .container-posts>div.postzao>.post-preview>img {
-    width: 30%;
+    width: 35%;
+    height: 100%;
     float: left;
     background-color: white;
 }

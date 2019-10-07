@@ -11,6 +11,7 @@ import Navbar from "./Navbar.js";
 import Posts from "./Posts/Posts.js";
 import Article from "./Article.js";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div>
