@@ -5,9 +5,6 @@
 
 }
 
-.container-posts>div.sidebar {}
-
-.container-posts>div.sidebar1 {}
 
 .container-posts>div.postzao {
 
@@ -22,6 +19,12 @@
 .container-posts>div.postzao>h1 {
 
 
+    align-self: flex-start;
+}
+
+.container-posts>div.postzao p {
+
+    color: gray;
     align-self: flex-start;
 }
 

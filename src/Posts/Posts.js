@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Posts.css";
+
 import { Link, Router } from "react-router-dom";
 class Posts extends Component {
   render() {
@@ -13,14 +14,15 @@ class Posts extends Component {
             <h2>
               <a href="article">Venha fazer empréstimo com a bxblue </a>
             </h2>
+            <i class="fa fa-user">Thalles Freitas </i>
+            <i class="fa fa-date">06/10/2019</i>
             <p>
               simply dummy text of the printing and typesetting industry. Lorem
               Ipsum has been the industry's standard dummy text ever since the
               1500s, when an unknown printer took a galley of type and scrambled
               it to make a type specimen book
             </p>
-            <i class="fa fa-user">Thalles Freitas </i>
-            <i class="fa fa-date">06/10/2019</i>
+
             <br />
             <Link to="/contact" class="square_btn">
               Leia Mais
