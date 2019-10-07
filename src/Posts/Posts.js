@@ -39,7 +39,7 @@ class Posts extends Component {
 
             <br />
             <div class="offset-md-4 col-md-8">
-              <Link to="/contact" class="btn btn-info btn-block">
+              <Link to="/form" class="btn btn-info btn-block">
                 Leia Mais
               </Link>
             </div>
