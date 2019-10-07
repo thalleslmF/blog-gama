@@ -6,3 +6,9 @@
     box-shadow: 0 0 1em #233D4D;
     background-color: #5ADBFF;
 }
+
+@media (max-width: 767px) {
+    h2.display-5 {
+        font-size: 12px;
+    }
+}

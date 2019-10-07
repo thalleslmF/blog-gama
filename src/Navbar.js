@@ -19,13 +19,6 @@ class Navbar extends Component {
             </li>
           </ul>
         </div>
-        <div className="logo">
-          <ul>
-            <li>
-              <a href="#contato">Login</a>
-            </li>
-          </ul>
-        </div>
       </div>
     );
   }
