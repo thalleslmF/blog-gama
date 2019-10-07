@@ -1,29 +1,9 @@
-.navbar {
-  display: flex;
-
-  background-color: #233D4D;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
 .logo p#logo>span {
   color: #5ADBFF;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
-.square_btn {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #5ADBFF;
-  /*Button Color*/
-  color: #white;
-
-  border-radius: 3px;
-}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -36,12 +16,7 @@ body {
 }
 
 
-.container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
+
 
 .navbar>div>p {
 
