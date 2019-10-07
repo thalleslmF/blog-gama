@@ -1,23 +1,20 @@
 import React, { Component } from "react";
 import "./App.css";
+import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
         <div className="logo">
-          <p id="logo">
+          <a href="/">
             bx<span>blue</span>
-          </p>
+          </a>
         </div>
         <div className="logo">
-          <ul>
-            <li>
-              <a href="#contato">Contato</a>
-            </li>
-            <li>
-              <a href="#posts">Posts</a>
-            </li>
-          </ul>
+          <Link to="/posts">Posts</Link>
+        </div>
+        <div className="logo">
+          <Link to="/form">Contato</Link>
         </div>
       </div>
     );

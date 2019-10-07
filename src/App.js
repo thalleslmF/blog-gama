@@ -17,12 +17,13 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div>
-      <Navbar />
       <Router>
+        <Navbar />
+
         <Redirect path="/" to="/posts" />
 
         <Route exact path="/posts" component={Posts} />
-        <Route exact path="/contact" component={Article} />
+        <Route exact path="/article" component={Article} />
         <Route exact path="/form" component={Form} />
       </Router>
     </div>

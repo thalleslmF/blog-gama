@@ -1,4 +1,13 @@
-.logo p#logo>span {
+.navbar {
+  background-color: #233D4D;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.logo a>span {
   color: #5ADBFF;
 }
 
@@ -18,20 +27,25 @@ body {
 
 
 
-.navbar>div>p {
+.navbar>div>a {
 
 
 
-  display: inline;
 
   color: white;
-  font-size: 20px;
 
 
+  font-weight: 700px;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 ul li {
   list-style: none;
+}
+
+#conteudoMargin {
+  margin-right: 10px;
 }
 
 ul>li>a {
@@ -40,25 +54,13 @@ ul>li>a {
   font-size: 1.25em;
 }
 
-.navbar>div>ul>li {
 
-
-
-  display: inline;
-
-
-  font-size: 20px;
-  margin: 10px;
-
-}
 
 .navbar>div>ul>li>a {
   color: white;
 }
 
-.navbar>div>p#logo {
-  font-size: 40px;
-}
+
 
 .navbar>div>p.centro {
 
