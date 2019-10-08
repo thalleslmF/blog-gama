@@ -68,7 +68,6 @@ class Form extends Component {
                       <i className="prepend"></i>
                       <label>Nome</label>
                       <input
-                        onChange={this.mudaValor}
                         placeholder="Nome Completo"
                         type="text"
                         className="form-control col-md-12"
@@ -82,7 +81,6 @@ class Form extends Component {
                       <label>Email</label>
                       <i className="prepend"></i>
                       <input
-                        onChange={this.mudaValor}
                         placeholder="Email"
                         type="email"
                         className="form-control"
@@ -91,14 +89,9 @@ class Form extends Component {
                       />
                     </div>
                   </div>
-                  <input
-                    onChange={this.chamaFuncao}
-                    style={{ display: "hidden" }}
-                    id="date"
-                    name="date"
-                  />
-                  <input onChange={this.chamaFuncao} id="ip" name="ip" />
-                  <input onChange={this.chamaFuncao} id="b2b" name="b2b" />
+                  <input id="date" name="date" />
+                  <input id="ip" name="ip" />
+                  <input id="b2b" name="b2b" />
                   <input
                     value="Enviar"
                     type="submit"
