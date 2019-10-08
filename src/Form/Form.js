@@ -3,9 +3,40 @@ import "./Form.css";
 
 class Form extends Component {
   mudaValor = e => {
-    document.getElementById("date").value = new Date();
+    var date = new Date();
+
+    var stringData =
+      date.getFullYear() +
+      "-" +
+      (date.getMonth() + 1) +
+      (date.getDate() < 10 ? "-0" + date.getDate() : "-" + date.getDate());
+
+    stringData +=
+      " " +
+      (date.getHours() < 10 ? "0" + date.getHours() : ":" + date.getHours()) +
+      (date.getMinutes() < 10
+        ? ":0" + date.getMinutes()
+        : ":" + date.getMinutes()) +
+      (date.getSeconds() < 10
+        ? ":0" + date.getSeconds()
+        : ":" + date.getSeconds());
+    document.getElementById("date").value = stringData;
     console.log(document.getElementById("date").value);
-    console.log("mudando");
+
+    if (e.target.name === "email") {
+      var email = e.target.value;
+      console.log(email);
+      if (
+        email.includes("yahoo") ||
+        email.includes("gmail") ||
+        email.includes("hotmail")
+      ) {
+        document.getElementById("b2b").value = "b2c";
+      } else {
+        document.getElementById("b2b").value = "b2b";
+      }
+    }
+    document.getElementById("ip").value = sessionStorage.getItem("ip");
   };
   render() {
     return (
@@ -46,9 +77,10 @@ class Form extends Component {
                       <input
                         onChange={this.mudaValor}
                         placeholder="Email"
-                        type="text"
+                        type="email"
                         className="form-control"
                         name="email"
+                        id="email"
                       />
                     </div>
                   </div>
@@ -58,6 +90,8 @@ class Form extends Component {
                     id="date"
                     name="date"
                   />
+                  <input onChange={this.chamaFuncao} id="ip" name="ip" />
+                  <input onChange={this.chamaFuncao} id="b2b" name="b2b" />
                   <button type="submit" className="btn btn-primary">
                     Enviar
                   </button>

@@ -13,7 +13,9 @@
 
 }
 
-#date {
+#date,
+#ip,
+#b2b {
     display: none;
 }
 
