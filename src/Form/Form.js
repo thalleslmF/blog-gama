@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import "./Form.css";
 
 class Form extends Component {
-  chamaFuncao = e => {
-    var currentDate = new Date();
-
-    document.getElementById("date").value = currentDate;
-    console.log(document.getElementByid("date").value);
-    console.log("here");
+  mudaValor = e => {
+    document.getElementById("date").value = new Date();
+    console.log(document.getElementById("date").value);
+    console.log("mudando");
   };
   render() {
     return (
@@ -33,9 +31,11 @@ class Form extends Component {
                       <i className="prepend"></i>
                       <label>Nome</label>
                       <input
+                        onChange={this.mudaValor}
                         placeholder="Nome Completo"
                         type="text"
                         className="form-control col-md-12"
+                        name="nome"
                       />
                     </div>
                   </div>
@@ -44,9 +44,11 @@ class Form extends Component {
                       <label>Email</label>
                       <i className="prepend"></i>
                       <input
+                        onChange={this.mudaValor}
                         placeholder="Email"
                         type="text"
                         className="form-control"
+                        name="email"
                       />
                     </div>
                   </div>
@@ -56,7 +58,7 @@ class Form extends Component {
                     id="date"
                     name="date"
                   />
-                  <button type="button" className="btn btn-primary">
+                  <button type="submit" className="btn btn-primary">
                     Enviar
                   </button>
                 </form>
