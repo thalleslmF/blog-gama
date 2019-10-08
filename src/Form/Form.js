@@ -97,6 +97,7 @@ class Form extends Component {
                     type="submit"
                     className="btn btn-primary"
                   ></input>
+                  <input type="hidden" name="bot-field" />
                 </form>
               </div>
             </div>
