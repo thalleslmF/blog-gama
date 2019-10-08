@@ -55,7 +55,13 @@ class Form extends Component {
                 </p>
               </div>
               <div className="col-sm-12 col-md-6 " id="shadow">
-                <form method="post" name="cadastro" data-netlify="true">
+                <form
+                  name="cadastro"
+                  method="post"
+                  action="/posts"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                >
                   <h3>Cadastro</h3>
                   <div className="form-group">
                     <div className="prepend">
@@ -67,6 +73,7 @@ class Form extends Component {
                         type="text"
                         className="form-control col-md-12"
                         name="nome"
+                        id="nome"
                       />
                     </div>
                   </div>
@@ -92,9 +99,11 @@ class Form extends Component {
                   />
                   <input onChange={this.chamaFuncao} id="ip" name="ip" />
                   <input onChange={this.chamaFuncao} id="b2b" name="b2b" />
-                  <button type="submit" className="btn btn-primary">
-                    Enviar
-                  </button>
+                  <input
+                    value="Enviar"
+                    type="submit"
+                    className="btn btn-primary"
+                  ></input>
                 </form>
               </div>
             </div>
