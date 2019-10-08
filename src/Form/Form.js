@@ -55,13 +55,8 @@ class Form extends Component {
                 </p>
               </div>
               <div className="col-sm-12 col-md-6 " id="shadow">
-                <form
-                  name="cadastro"
-                  method="post"
-                  action="/posts"
-                  data-netlify="true"
-                  data-netlify-honeypot="bot-field"
-                >
+                <form name="cadastro" method="post" action="/posts" netlify>
+                  <input type="hidden" name="form-name" value="cadastro" />
                   <h3>Cadastro</h3>
                   <div className="form-group">
                     <div className="prepend">
@@ -92,12 +87,9 @@ class Form extends Component {
                   <input id="date" name="date" />
                   <input id="ip" name="ip" />
                   <input id="b2b" name="b2b" />
-                  <input
-                    value="Enviar"
-                    type="submit"
-                    className="btn btn-primary"
-                  ></input>
-                  <input type="hidden" name="bot-field" />
+                  <button type="submit" className="btn btn-primary">
+                    Enviar
+                  </button>
                 </form>
               </div>
             </div>
