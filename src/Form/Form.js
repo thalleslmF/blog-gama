@@ -55,7 +55,12 @@ class Form extends Component {
                 </p>
               </div>
               <div className="col-sm-12 col-md-6 " id="shadow">
-                <form name="cadastro" method="post" netlify>
+                <form
+                  enctype="application/x-www-form-urlencoded"
+                  name="cadastro"
+                  method="post"
+                  netlify
+                >
                   <input type="hidden" name="form-name" value="cadastro" />
                   <h3>Cadastro</h3>
                   <div className="form-group">
