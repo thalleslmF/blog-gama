@@ -15,3 +15,7 @@ $(document).ready(function() {
     sessionStorage.setItem("ip", addrInfo.ipAddress)
   );
 });
+$("input").change(function() {
+  console.log($(this).val());
+  console.log($(this).prop("name"));
+});
