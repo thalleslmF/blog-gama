@@ -5,18 +5,13 @@ class Form extends Component {
   chamaFuncao = e => {
     var currentDate = new Date();
 
-    var date = currentDate.getDate();
-    var month = currentDate.getMonth(); //Be careful! January is 0 not 1
-    var year = currentDate.getFullYear();
-
-    var dateString = date + "-" + (month + 1) + "-" + year;
     document.getElementById("date").value = currentDate;
     console.log(document.getElementByid("date").value);
     console.log("here");
   };
   render() {
     return (
-      <div class="container-fluid">
+      <div className="container-fluid">
         <div className="sidebar"></div>
         <div className="postzao">
           <div className="container">
@@ -30,13 +25,14 @@ class Form extends Component {
                   melhores ofertas e propostas disponiveis!
                 </p>
               </div>
-              <div class="col-sm-12 col-md-6 " id="shadow">
+              <div className="col-sm-12 col-md-6 " id="shadow">
                 <form
                   method="post"
                   action="/posts"
                   onSubmit={this.chamaFuncao}
                   name="cadastro"
-                  netlify
+                  netlify="true"
+                  data-netlify="true"
                 >
                   <h3>Cadastro</h3>
                   <div className="form-group">
@@ -67,7 +63,7 @@ class Form extends Component {
                     id="date"
                     name="date"
                   />
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                     Enviar
                   </button>
                 </form>

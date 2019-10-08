@@ -9,23 +9,23 @@ class Posts extends Component {
         <div className="sidebar"></div>
         <div className="postzao">
           <h1>Posts recentes</h1>
-          <div class="post-preview">
-            <img src="\bxblue-emprestimo.png" alt="" srcset="" />
-            <div class="col-md-12">
-              <div class="row">
+          <div className="post-preview">
+            <img src="\bxblue-emprestimo.png" alt="" srcSet="" />
+            <div className="col-md-12">
+              <div className="row">
                 <h2>
                   <a href="article">Venha fazer empréstimo com a bxblue </a>
                 </h2>
               </div>
             </div>
 
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-3">
-                  <i class="fa fa-user">Thalles Freitas </i>
+            <div className="col-md-12">
+              <div className="row">
+                <div className="col-md-3">
+                  <i className="fa fa-user">Thalles Freitas </i>
                 </div>
-                <div class="col-md-3">
-                  <i class="fa fa-calendar"> 06/10/2019</i>
+                <div className="col-md-3">
+                  <i className="fa fa-calendar"> 06/10/2019</i>
                 </div>
               </div>
             </div>
@@ -38,8 +38,8 @@ class Posts extends Component {
             </p>
 
             <br />
-            <div class="offset-md-4 col-md-8">
-              <Link to="/article" class="btn btn-info btn-block">
+            <div className="offset-md-4 col-md-8">
+              <Link to="/article" className="btn btn-info btn-block">
                 Leia Mais
               </Link>
             </div>
