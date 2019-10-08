@@ -5,6 +5,17 @@
 #shadow {
     box-shadow: 0 0 1em #233D4D;
     background-color: #5ADBFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#shadow input {
+    max-width: 375px;
+    width: 375px;
 }
 
 #align-itens {
@@ -12,8 +23,11 @@
     align-items: center;
 }
 
-#align-itens>div {
-    margin-top: 30px;
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+#alinha-itens>div {
+    margin-top: 60px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 @media (max-width: 767px) {

@@ -28,7 +28,7 @@ class Form extends Component {
                       <input
                         placeholder="Nome Completo"
                         type="text"
-                        className="form-control"
+                        className="form-control col-md-12"
                       />
                     </div>
                   </div>
