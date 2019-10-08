@@ -26,14 +26,7 @@ class Form extends Component {
                 </p>
               </div>
               <div className="col-sm-12 col-md-6 " id="shadow">
-                <form
-                  method="post"
-                  action="/posts"
-                  onSubmit={this.chamaFuncao}
-                  name="cadastro"
-                  netlify="true"
-                  data-netlify="true"
-                >
+                <form method="post" name="cadastro" data-netlify="true">
                   <h3>Cadastro</h3>
                   <div className="form-group">
                     <div className="prepend">
