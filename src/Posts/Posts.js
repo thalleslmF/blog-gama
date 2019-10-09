@@ -11,7 +11,7 @@ class Posts extends Component {
           <h1>Posts recentes</h1>
 
           <div className="post-preview">
-            <div className="col-md-10">
+            <div className="col-md-12">
               <div class="col-md-12">
                 <img src="\bxblue-emprestimo.png" alt="" srcSet="" />
               </div>
@@ -42,7 +42,7 @@ class Posts extends Component {
               </p>
 
               <br />
-              <div className="offset-md-4 col-md-8">
+              <div className="col-md-12">
                 <Link to="/article" className="btn btn-info btn-block">
                   Leia Mais
                 </Link>
