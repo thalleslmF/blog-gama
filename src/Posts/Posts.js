@@ -23,7 +23,7 @@ class Posts extends Component {
                 <div className="offset-md-2 col-md-8">
                   <div className="row">
                     <h4>
-                      <a href="article">Venha fazer empréstimo com a bxblue </a>
+                      <a href="article">Venha fazer empréstimo com a bxblue</a>
                     </h4>
                   </div>
                 </div>

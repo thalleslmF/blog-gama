@@ -4,32 +4,34 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <div className="navbar-collapse collapse" id="lista-dados"></div>
+      <nav className="navbar navbar-expand-lg">
         <div class="navbar-header">
           <a to="/" className="navbar-brand mx-auto" style={{ color: "white" }}>
-            amigo<span>Consignado</span>
+            amigoConsignado
           </a>
         </div>
-
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item ">
-            <Link to="/posts" className="nav-link">
-              Posts
-            </Link>
-          </li>
-          <li className="nav-item ">
-            <Link to="/form" className="nav-link">
-              Contato
-            </Link>
-          </li>
-        </ul>
         <button
           className="navbar-toggler"
           data-toggle="collapse"
           data-target="#lista-dados"
-        ></button>
-      </div>
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="lista-dados">
+          <ul className="navbar-nav ml-auto ">
+            <li className="nav-item ">
+              <Link to="/posts" className="nav-link">
+                Inicio
+              </Link>
+            </li>
+            <li className="nav-item ">
+              <Link to="/" className="nav-link">
+                Ebook
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     );
   }
 }

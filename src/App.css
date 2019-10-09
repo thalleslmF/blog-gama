@@ -1,8 +1,5 @@
-.navbar-header {
-  float: left;
-
-  text-align: center;
-  width: 100%;
+.navbar {
+  background-color: #6BBF54
 }
 
 .masthead {
@@ -11,6 +8,8 @@
   background-size: cover;
   height: 100%;
   width: 100%;
+  max-height: 250px;
+
 }
 
 img {
@@ -18,14 +17,22 @@ img {
   height: auto;
 }
 
+#orange {
+  color: #d8731A;
+  text-decoration: none;
+}
+
+#orangeButton {
+  background-color: #d8731A;
+
+}
+
 .navbar-brand {
   float: none;
 }
 
 
-a>span {
-  color: rgb(241, 238, 10);
-}
+
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
@@ -53,7 +60,7 @@ body {
 
   font-weight: 700px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 ul li {
