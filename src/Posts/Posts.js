@@ -21,10 +21,10 @@ class Posts extends Component {
 
             <div className="col-md-12">
               <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-6">
                   <i className="fa fa-user">Thalles Freitas </i>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-6">
                   <i className="fa fa-calendar"> 06/10/2019</i>
                 </div>
               </div>

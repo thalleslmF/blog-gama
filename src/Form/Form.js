@@ -19,7 +19,7 @@ class Form extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "cadastro", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Sucesso!"))
       .catch(error => alert(error));
 
     e.preventDefault();
