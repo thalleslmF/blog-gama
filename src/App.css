@@ -39,9 +39,7 @@ img {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: whitesmoke;
   height: 100%;
   width: 100%;
 
