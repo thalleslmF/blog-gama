@@ -17,7 +17,9 @@ class Posts extends Component {
               </div>
             </header>
             <div class="row" id="posts">
-              <h3 id="orange"> Posts Recentes</h3>
+              <div class="col-md-12">
+                <h3 id="orange"> Posts Recentes</h3>
+              </div>
               <div class="col-md-8">
                 <div className="container" id="post">
                   <div class="col-md-12">
