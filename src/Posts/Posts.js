@@ -12,14 +12,20 @@ class Posts extends Component {
 
           <div className="post-preview">
             <div className="col-md-12">
-              <div class="col-md-12">
-                <img src="\bxblue-emprestimo.png" alt="" srcSet="" />
-              </div>
-              <div className="col-md-12">
-                <div className="row">
-                  <h2>
-                    <a href="article">Venha fazer empréstimo com a bxblue </a>
-                  </h2>
+              <div class="row">
+                <div class=" offset-md-2 col-md-8">
+                  <img
+                    className="image-fluid"
+                    srcSet="\bxblue-emprestimo.png"
+                    alt=""
+                  />
+                </div>
+                <div className="offset-md-2 col-md-8">
+                  <div className="row">
+                    <h3>
+                      <a href="article">Venha fazer empréstimo com a bxblue </a>
+                    </h3>
+                  </div>
                 </div>
               </div>
 
@@ -34,18 +40,20 @@ class Posts extends Component {
                 </div>
               </div>
               <hr></hr>
-              <p>
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book
-              </p>
+              <div class="row">
+                <p>
+                  simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book
+                </p>
 
-              <br />
-              <div className="col-md-12">
-                <Link to="/article" className="btn btn-info btn-block">
-                  Leia Mais
-                </Link>
+                <br />
+                <div className="col-md-12">
+                  <Link to="/article" className="btn btn-info btn-block">
+                    Leia Mais
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

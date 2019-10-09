@@ -92,45 +92,47 @@ class Form extends Component {
                   melhores ofertas e propostas disponiveis!
                 </p>
               </div>
-              <div className="col-sm-12 col-md-6 " id="shadow">
-                <form onSubmit={this.handleSubmit}>
-                  <input type="hidden" name="form-name" value="cadastro" />
-                  <h3>Cadastro</h3>
-                  <div className="form-group">
-                    <div className="prepend">
-                      <i className="prepend"></i>
-                      <label>Nome</label>
-                      <input
-                        placeholder="Nome Completo"
-                        type="text"
-                        className="form-control col-md-12"
-                        name="nome"
-                        id="nome"
-                        onChange={this.mudaValor}
-                      />
+              <div class="row">
+                <div className="col-sm-12 col-md-6 " id="shadow">
+                  <form onSubmit={this.handleSubmit}>
+                    <input type="hidden" name="form-name" value="cadastro" />
+                    <h3>Cadastro</h3>
+                    <div className="form-group">
+                      <div className="prepend">
+                        <i className="prepend"></i>
+                        <label>Nome</label>
+                        <input
+                          placeholder="Nome Completo"
+                          type="text"
+                          className="form-control col-md-12"
+                          name="nome"
+                          id="nome"
+                          onChange={this.mudaValor}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="form-group">
-                    <div className="prepend">
-                      <label>Email</label>
-                      <i className="prepend"></i>
-                      <input
-                        placeholder="Email"
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        id="email"
-                        onChange={this.mudaValor}
-                      />
+                    <div className="form-group">
+                      <div className="prepend">
+                        <label>Email</label>
+                        <i className="prepend"></i>
+                        <input
+                          placeholder="Email"
+                          type="email"
+                          className="form-control"
+                          name="email"
+                          id="email"
+                          onChange={this.mudaValor}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <input id="date" name="date" />
-                  <input id="ip" name="ip" />
-                  <input id="b2b" name="b2b" />
-                  <button type="submit" className="btn btn-primary">
-                    Enviar
-                  </button>
-                </form>
+                    <input id="date" name="date" />
+                    <input id="ip" name="ip" />
+                    <input id="b2b" name="b2b" />
+                    <button type="submit" className="btn btn-primary">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
