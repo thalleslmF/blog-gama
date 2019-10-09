@@ -2,13 +2,13 @@
   background-color: #6BBF54
 }
 
-.masthead {
-  background-image: url('/euro-1353420_960_720.jpg');
+.header {
+  background-image: url('/IMG-20191009-WA0086.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
 
 }
 

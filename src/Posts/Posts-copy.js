@@ -8,8 +8,7 @@ class Posts extends Component {
       <div>
         <div class="container">
           <div class="offset-md-1 col-md-10">
-            <header class="masthead">
-              <div class="overlay"></div>
+            <header class="header">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-8 col-md-10 mx-auto"></div>
