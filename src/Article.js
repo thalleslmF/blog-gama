@@ -15,7 +15,7 @@ class Article extends Component {
             <hr />
             Dia: 07/10/2019
             <hr />
-            <div class="container">
+            <div class="container" id="artigo">
               <div class="row">
                 <div class="col-md-12 col-sm-6">
                   <article>

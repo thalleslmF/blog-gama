@@ -8,6 +8,15 @@
     background-image: none;
 }
 
+#post {
+    box-shadow: 0 0 1em black;
+    margin-top: 20px;
+
+}
+
+h4>a {
+    text-decoration: none;
+}
 
 .container-posts>div.postzao {
 
@@ -16,7 +25,7 @@
     flex-grow: 3;
     max-width: 50%;
     text-align: center;
-    background-color: #5ADBFF;
+    background-color: white;
 
 }
 
@@ -90,7 +99,17 @@
 
 article {}
 
-@media (max-width: 380px) {
+#artigo {
+    overflow: auto;
+}
+
+h3,
+h2,
+a {
+    color: rgb(241, 238, 10);
+}
+
+@media (max-width: 414px) {
     h2 {
         font-size: 8px;
     }

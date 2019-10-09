@@ -1,14 +1,30 @@
-.navbar {
-  background-color: #233D4D;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.navbar-header {
+  float: left;
+
+  text-align: center;
+  width: 100%;
+}
+
+.masthead {
+  background-image: url('/euro-1353420_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-brand {
+  float: none;
 }
 
 
-.logo a>span {
-  color: #5ADBFF;
+a>span {
+  color: rgb(241, 238, 10);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
@@ -16,7 +32,7 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-image: url("/sunrise-1634197_960_720.jpg");
+  background-color: rgb(151, 151, 170);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -27,7 +43,7 @@ body {
 
 
 
-.navbar>div>a {
+.navbar a {
 
 
 

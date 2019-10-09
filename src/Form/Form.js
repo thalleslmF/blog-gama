@@ -100,7 +100,7 @@ class Form extends Component {
                     <div className="form-group">
                       <div className="prepend">
                         <i className="prepend"></i>
-                        <label>Nome</label>
+                        <label style={{ color: "yellow" }}>Nome</label>
                         <input
                           placeholder="Nome Completo"
                           type="text"
@@ -113,7 +113,7 @@ class Form extends Component {
                     </div>
                     <div className="form-group">
                       <div className="prepend">
-                        <label>Email</label>
+                        <label style={{ color: "yellow" }}>Email</label>
                         <i className="prepend"></i>
                         <input
                           placeholder="Email"

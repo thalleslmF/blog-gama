@@ -22,9 +22,13 @@ class Posts extends Component {
                 </div>
                 <div className="offset-md-2 col-md-8">
                   <div className="row">
-                    <h3>
-                      <a href="article">Venha fazer empréstimo com a bxblue </a>
-                    </h3>
+                    <div className="offset-md-3 col-md-8">
+                      <h3>
+                        <a href="article">
+                          Venha fazer empréstimo com a bxblue{" "}
+                        </a>
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -40,7 +44,7 @@ class Posts extends Component {
                 </div>
               </div>
               <hr></hr>
-              <div class="row">
+              <div class="row" id="artigo">
                 <p>
                   simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum has been the industry's standard dummy text ever
