@@ -93,7 +93,7 @@ class Form extends Component {
                 </p>
               </div>
               <div class="row">
-                <div className="col-sm-12 col-md-6 " id="shadow">
+                <div className="col-sm-12 col-md-12 " id="shadow">
                   <form onSubmit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="cadastro" />
                     <h3>Cadastro</h3>
