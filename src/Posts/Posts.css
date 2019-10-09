@@ -62,8 +62,8 @@
     color: #5ADBFF;
 }
 
-.container-posts>div.postzao>.post-preview>img {
-    width: 35%;
+.container-posts>div.postzao>.post-preview img {
+    width: 50%;
     height: 100%;
     float: left;
     background-color: white;
