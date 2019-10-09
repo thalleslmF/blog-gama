@@ -128,7 +128,7 @@ class Form extends Component {
                     <input id="date" name="date" />
                     <input id="ip" name="ip" />
                     <input id="b2b" name="b2b" />
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-white">
                       Enviar
                     </button>
                   </form>
