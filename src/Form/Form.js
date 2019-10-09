@@ -86,6 +86,7 @@ class Form extends Component {
                         className="form-control"
                         name="email"
                         id="email"
+                        onChange={this.mudaValor}
                       />
                     </div>
                   </div>
