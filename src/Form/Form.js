@@ -106,6 +106,7 @@ class Form extends Component {
                         className="form-control col-md-12"
                         name="nome"
                         id="nome"
+                        onChange={this.mudaValor}
                       />
                     </div>
                   </div>
