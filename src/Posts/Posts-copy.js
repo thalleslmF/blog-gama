@@ -8,13 +8,8 @@ class Posts extends Component {
       <div>
         <div class="container">
           <div class="offset-md-1 col-md-10">
-            <header class="header img-responsive">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-8 col-md-10 mx-auto"></div>
-                </div>
-              </div>
-            </header>
+            <img src="/IMG-20191009-WA0086.jpg" class="header img-responsive" />
+
             <div class="row" id="posts">
               <div class="col-md-12">
                 <h3 id="orange"> Posts Recentes</h3>
