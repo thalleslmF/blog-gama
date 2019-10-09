@@ -1,7 +1,29 @@
 import React, { Component } from "react";
 import "./Form.css";
-
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 class Form extends Component {
+  state = {
+    email: "",
+    nome: "",
+    data: "",
+    ip: "",
+    b2b: ""
+  };
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
   mudaValor = e => {
     var date = new Date();
 
@@ -20,22 +42,38 @@ class Form extends Component {
       (date.getSeconds() < 10
         ? ":0" + date.getSeconds()
         : ":" + date.getSeconds());
-    document.getElementById("date").value = stringData;
-    console.log(document.getElementById("date").value);
 
     if (e.target.name === "email") {
-      var email = e.target.value;
-      console.log(email);
+      var emailUser = e.target.value;
+
       if (
-        email.includes("yahoo") ||
-        email.includes("gmail") ||
-        email.includes("hotmail")
+        emailUser.includes("yahoo") ||
+        emailUser.includes("gmail") ||
+        emailUser.includes("hotmail")
       ) {
-        document.getElementById("b2b").value = "b2c";
+        this.setState({
+          b2b: "b2c"
+        });
       } else {
-        document.getElementById("b2b").value = "b2b";
+        this.setState({
+          b2b: "b2c"
+        });
       }
     }
+    if (e.target.name === "email") {
+      this.setState({
+        ip: sessionStorage.getItem("ip"),
+        date: stringData,
+        email: e.target.value
+      });
+    } else {
+      this.setState({
+        ip: sessionStorage.getItem("ip"),
+        date: stringData,
+        nome: e.target.value
+      });
+    }
+
     document.getElementById("ip").value = sessionStorage.getItem("ip");
   };
   render() {
@@ -55,12 +93,7 @@ class Form extends Component {
                 </p>
               </div>
               <div className="col-sm-12 col-md-6 " id="shadow">
-                <form
-                  enctype="application/x-www-form-urlencoded"
-                  name="cadastro"
-                  method="post"
-                  netlify
-                >
+                <form onSubmit={this.handleSubmit}>
                   <input type="hidden" name="form-name" value="cadastro" />
                   <h3>Cadastro</h3>
                   <div className="form-group">
