@@ -17,6 +17,11 @@ class Article extends Component {
             <hr />
             <div class="container" id="artigo">
               <div class="row">
+                <div class="col-md-12">
+                  <div class="offset-md-2 col-md-10">
+                    <img srcSet="/money-2724241_960_720.jpg" alt="money" />
+                  </div>
+                </div>
                 <div class="col-md-12 col-sm-6">
                   <article>
                     simply dummy text of the printing and typesetting industry.
