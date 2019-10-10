@@ -13,6 +13,10 @@
 
 }
 
+#btnYellow {
+    background-color: rgb(241, 238, 10);
+}
+
 h2 {
     color: rgb(241, 238, 10);
 }

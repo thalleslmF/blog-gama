@@ -78,67 +78,55 @@ class Form extends Component {
   };
   render() {
     return (
-      <div className="container-fluid">
-        <div className="sidebar"></div>
-        <div className="postzao">
-          <div className="container">
-            <div className="row" id="alinha-itens">
-              <div className="col-sm-12 col-md-6 ">
-                <h2 className="" id="header-blue">
-                  Entre em contato para as melhores ofertas
-                </h2>
-                <p>
-                  Inscreva-se com seu nome e email para poder acompanhar as
-                  melhores ofertas e propostas disponiveis!
-                </p>
-              </div>
-              <div class="row">
-                <div className="col-sm-12 col-md-12 " id="shadow">
-                  <form onSubmit={this.handleSubmit}>
-                    <input type="hidden" name="form-name" value="cadastro" />
-                    <h3>Cadastro</h3>
-                    <div className="form-group">
-                      <div className="prepend">
-                        <i className="prepend"></i>
-                        <label style={{ color: "yellow" }}>Nome</label>
-                        <input
-                          placeholder="Nome Completo"
-                          type="text"
-                          className="form-control col-md-12"
-                          name="nome"
-                          id="nome"
-                          onChange={this.mudaValor}
-                        />
-                      </div>
-                    </div>
-                    <div className="form-group">
-                      <div className="prepend">
-                        <label style={{ color: "yellow" }}>Email</label>
-                        <i className="prepend"></i>
-                        <input
-                          placeholder="Email"
-                          type="email"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          onChange={this.mudaValor}
-                        />
-                      </div>
-                    </div>
-                    <input id="date" name="date" />
-                    <input id="ip" name="ip" />
-                    <input id="b2b" name="b2b" />
-                    <button type="submit" className="btn btn-default">
-                      Enviar
-                    </button>
-                  </form>
+      <div className="row" id="alinha-itens">
+        <div className="col-sm-12 col-md-6 ">
+          <h2 className="" id="header-blue">
+            Entre em contato para saber mais!
+          </h2>
+          <p>Inscreva-se com seu nome e email para nos acompanhar.</p>
+        </div>
+        <div class="row">
+          <div className="col-sm-12 col-md-12 " id="shadow">
+            <form onSubmit={this.handleSubmit}>
+              <input type="hidden" name="form-name" value="cadastro" />
+              <h2>Cadastro</h2>
+              <div className="form-group">
+                <div className="prepend">
+                  <i className="prepend"></i>
+                  <label style={{ color: "yellow" }}>Nome</label>
+                  <input
+                    placeholder="Nome Completo"
+                    type="text"
+                    className="form-control col-md-12"
+                    name="nome"
+                    id="nome"
+                    onChange={this.mudaValor}
+                  />
                 </div>
               </div>
-            </div>
+              <div className="form-group">
+                <div className="prepend">
+                  <label style={{ color: "yellow" }}>Email</label>
+                  <i className="prepend"></i>
+                  <input
+                    placeholder="Email"
+                    type="email"
+                    className="form-control"
+                    name="email"
+                    id="email"
+                    onChange={this.mudaValor}
+                  />
+                </div>
+              </div>
+              <input id="date" name="date" />
+              <input id="ip" name="ip" />
+              <input id="b2b" name="b2b" />
+              <button id="btnYellow" type="submit" className="btn">
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
-
-        <div className="sidebar1"></div>
       </div>
     );
   }

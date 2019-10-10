@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
+body {
+    font-family: 'Fjalla One';
+}
+
 .container-posts {
     display: flex;
     flex-direction: row;
@@ -9,6 +13,7 @@
 }
 
 #post {
+
     box-shadow: 0 0 1em #d8731A;
     margin-top: 20px;
     width: 100%;
@@ -17,6 +22,7 @@
 
 #posts {
     background-color: white;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 h4>a {
@@ -28,10 +34,15 @@ h4>a {
     display: flex;
     flex-direction: column;
     flex-grow: 3;
-    max-width: 50%;
+    max-width: 90%;
+    height: 100%;
     text-align: center;
     background-color: white;
+    height: 700px;
+}
 
+.post-preview {
+    height: 700px;
 }
 
 .container-posts>div.postzao>h1 {
