@@ -10,7 +10,9 @@ class Article extends Component {
           <div class="row">
             <div class="col-md-12 " id="article">
               <div class="col-md-12">
-                <h3 class="display-5 text-center">Titulo</h3>
+                <h3 class="display-5 text-center">
+                  5 motivos para o crédito consignado
+                </h3>
               </div>
               <div class="col-md-12">
                 <p class="text-center">
